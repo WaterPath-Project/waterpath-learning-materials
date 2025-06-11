@@ -57,7 +57,7 @@ Figure 3 provides an overview of the concentration model. Input data include run
 
 ## Risk
 
-<div class="text-sm">
+<div>
 The concentrations simulated by the model can be used in Quantitative Microbial Risk Assessment. First attempts to add QMRA using GloWPa results include Hofstra et al 2019, where QMRA was applied globally for the population drinking surface water directly and Limaheluw et al 2019, where QMRA was applied for the population using surface water for drinking directly and after treatment in sub-Sahara Africa. The QMRA script has not yet been added to the R package, but will be added within the Waterpath project.
 Input data for the QMRA model are the concentrations from GloWPa, the intake by a person during an exposure event, such as drinking or swimming or other activities, and dose-response information. To further simulate the number of cases or the disease burden, more information is required on the number of people that encounter exposure events. 
 </div>
