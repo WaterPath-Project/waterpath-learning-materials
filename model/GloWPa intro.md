@@ -6,8 +6,8 @@ The GloWPa model has been developed for different spatial scales, including glob
 
 The GloWPa model simulates pathogen emissions (or loads), concentrations and health risks according to assumptions and equations. The model provides spatially continuous outputs. The relative differences between different locations, sources, scenarios, future years etcetera are much more important than the exact values for specific grids and years that the model produces. With the model we can provide an understanding of pathogen emissions, concentrations and/or risks in an area where there are no data. Additionally, we can assess hotspot areas with high emissions, concentrations and/or risk, identify key sources of the emissions, concentrations and/or risk, and evaluate trends over time. Scenario analysis enables us to assess the impact of socio-economic development and climate change on the emissions, concentrations and/or risk, and it helps to evaluate the effectiveness of interventions.
 
-<p class="mt-30 mb-30 p-6 rounded-lg bg-sand-500">
-The Global Waterborne Pathogen (GloWPa) model has been developed over the years and we constantly work to improve it. For the purposes of the WaterPath Toolkit, the GloWPa model code has been developed into an R package. The package is available for download here: <a href="https://waterpath-toolkit.org/model">https://waterpath-toolkit.org/model</a>.
+<p class="mt-6 mb-6 p-6 rounded-lg bg-sand-500 font-bold">
+The Global Waterborne Pathogen (GloWPa) model has been developed over the years and we constantly work to improve it. For the purposes of the WaterPath Toolkit, the GloWPa model code has been developed into an R package. The package is available for download [here](https://waterpath-toolkit.org/model) and the model code is available [here]([https://waterpath-toolkit.org/model](https://git.wur.nl/glowpa/glowpa-r)).
 </p>
 
 The model is currently divided into four essential parts:
