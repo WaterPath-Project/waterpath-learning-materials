@@ -7,31 +7,23 @@ The GloWPa model has been developed for different spatial scales, including glob
 The GloWPa model simulates pathogen emissions (or loads), concentrations and health risks according to assumptions and equations. The model provides spatially continuous outputs. The relative differences between different locations, sources, scenarios, future years etcetera are much more important than the exact values for specific grids and years that the model produces. With the model we can provide an understanding of pathogen emissions, concentrations and/or risks in an area where there are no data. Additionally, we can assess hotspot areas with high emissions, concentrations and/or risk, identify key sources of the emissions, concentrations and/or risk, and evaluate trends over time. Scenario analysis enables us to assess the impact of socio-economic development and climate change on the emissions, concentrations and/or risk, and it helps to evaluate the effectiveness of interventions.
 
 <p class="mt-6 mb-6 p-6 rounded-lg bg-sand-500 font-bold">
-The Global Waterborne Pathogen (GloWPa) model has been developed over the years and we constantly work to improve it. For the purposes of the WaterPath Toolkit, the GloWPa model code has been developed into an R package. The package is available for download [here](https://waterpath-toolkit.org/model) and the model code is available [here]([https://waterpath-toolkit.org/model](https://git.wur.nl/glowpa/glowpa-r)).
+The Global Waterborne Pathogen (GloWPa) model has been developed over the years and we constantly work to improve it. For the purposes of the WaterPath Toolkit, the GloWPa model code has been developed into an R package. The package is available for download <a href="https://waterpath-toolkit.org/model">here</a> and the model code is available <a href="https://waterpath-toolkit.org/model">here</a>.
 </p>
 
 The model is currently divided into four essential parts:
-* Human Emissions
-* Livestock Emissions
-* Concentrations
-* Risk
+<div class="mt-12 mb-12 w-full grid md:grid-cols-4 gap-4 mx-auto m-auto items-stretch">
+        <div class="m-auto h-[120px] text-center pt-8 text-lg line-clamp-2 align-middle max-w-sm p-6 rounded-lg shadow-sm bg-white w-full"><h5 class="mb-6 font-bold tracking-tight text-blue-500">Human Emissions</h5></div><div class="m-auto h-[120px] text-center pt-8 text-lg line-clamp-2 align-middle max-w-sm p-6 rounded-lg shadow-sm bg-white w-full"><h5 class="mb-6 font-bold tracking-tight text-blue-500">Livestock Emissions</h5></div><div class="m-auto h-[120px] text-center pt-8 text-lg line-clamp-2 align-middle max-w-sm p-6 rounded-lg shadow-sm bg-white w-full"><h5 class="mb-6 font-bold tracking-tight text-blue-500">Concentrations</h5></div><div class="m-auto h-[120px] text-center pt-8 text-lg line-clamp-2 align-middle max-w-sm p-6 rounded-lg shadow-sm bg-white w-full"><h5 class="mb-6 font-bold tracking-tight text-blue-500">Risk</h5></div></div>
 
 ## Human Emissions
 The human emissions or loads part of the model has been developed to simulate the number of faecally excreted pathogens reaching surface water from human sources. These human sources include 13 onsite sanitation categories. These sanitation categories have also been used by the Joint Monitoring Programme of WHO/UNICEF.
 
 The flow of the pathogens through the systems is provided in Figure 1. The pathogens are followed from the source to the surface water and fate and transport processes are incorporated where appropriate. Main input data include population, other demographic data including urbanization rate and fraction of children younger than five years of age, prevalence of infection and excretion rates, sanitation fractions, for onsite systems the frequency of emptying of the onsite system, wastewater and faecal sludge treatment.
  
-<img src="./figures/human.jpg"/>
+<img class="mb-6 mt-6" src="./figures/human.jpg"/>
 
 <div class="text-sm"><b>Figure 1.</b> Schematic of the most recent version of the human emission model (Musaazi et al 2020). Pathogens flow through the onsite sanitation boundary and the centralised sanitation boundary. The
-grey, green and red arrows indicate standard, safe or unsafe pathways, respectively. Pathogens are: (1)
-excreted; (2) initially contained; (3) conveyed by sewerage and emitted via sewerage leaks, overflows or
-exfiltration; (4) associated with onsite technologies liquid or solid waste fractions; (5) in the liquid fractions of
-septage and emitted to the vadose zone via leach fields or to surface water when leach fields are absent; (6)
-emitted to groundwater or retained/inactivated in the subsurface; (7) present in solid faecal sludge or septage
-and emptied to treatment, covered and buried, or emitted to surface water; (8) decayed in onsite pits or tanks;
-(9) informally flushed from the solid onsite fraction to surface water and (10) at centralised treatment plants
-and are inactivated or discharged to surface water in liquid effluent or sludge/biosolids (Okaali et al 2022).</div> 
+grey, green and red arrows indicate standard, safe or unsafe pathways, respectively. Pathogens are: (1) excreted; (2) initially contained; (3) conveyed by sewerage and emitted via sewerage leaks, overflows or
+exfiltration; (4) associated with onsite technologies liquid or solid waste fractions; (5) in the liquid fractions of septage and emitted to the vadose zone via leach fields or to surface water when leach fields are absent; (6) emitted to groundwater or retained/inactivated in the subsurface; (7) present in solid faecal sludge or septage and emptied to treatment, covered and buried, or emitted to surface water; (8) decayed in onsite pits or tanks; (9) informally flushed from the solid onsite fraction to surface water and (10) at centralised treatment plants and are inactivated or discharged to surface water in liquid effluent or sludge/biosolids (Okaali et al 2022).</div> 
 
 ## Livestock emissions
 
@@ -40,7 +32,7 @@ The GloWPa model calculates livestock oocyst emissions (or loads) to land. This 
 The main input data for the model include: number of animals, pathogen prevalence and oocyst excretion rates, manure production and storage estimates, intensive and extensive farming systems and ambient temperature. The setup of the model is explained in Figure 2.
 
 
-<img src="./figures/livestock.jpg"/>
+<img class="mb-6 mt-6" src="./figures/livestock.jpg"/>
 
 <div class="text-sm"><b>Figure 2.</b> Schematic of the livestock emission model (Vermeulen et al 2017). Gray boxes represent the major subcomponents that are calculated, the white box represents the oocysts that are lost, and the text without boxes are model inputs. The oocyst load to land (E) is the main model output.</div>
 
@@ -51,16 +43,16 @@ The human and livestock emission data are used with information on hydrology to 
 Figure 3 provides an overview of the concentration model. Input data include runoff and discharge from hydrological models, together with the flow direction and accumulation files that are also used for the hydrological models and can be derived from digital elevation maps. Additionally, information on the travel time and decay rates are required. 
 
 
-<img src="./figures/concentrations.jpg"/>
+<img class="mb-6 mt-6" src="./figures/concentrations.jpg"/>
 
 <div class="text-sm"><b>Figure 3.</b> Schematic of the concentration model (Vermeulen et al 2019). This figure shows the ‘flow’ of oocysts from diffuse and point sources on the left to the concentrations in rivers on the right. In between, processes that are calculated are the transport with surface runoff, the transport with rivers (routing) and oocyst survival. Dotted arrows show the major influencing variables (runoff, discharge, water depth and travel time, and the survival rate as affected by temperature, solar radiation and sedimentation). The diffuse and point sources are presented in boxes with dotted lines, as they are not calculated in this current study, but in the GloWPa-Crypto H1 and L1 models.</div>
 
 ## Risk
 
-<div>
+
 The concentrations simulated by the model can be used in Quantitative Microbial Risk Assessment. First attempts to add QMRA using GloWPa results include Hofstra et al 2019, where QMRA was applied globally for the population drinking surface water directly and Limaheluw et al 2019, where QMRA was applied for the population using surface water for drinking directly and after treatment in sub-Sahara Africa. The QMRA script has not yet been added to the R package, but will be added within the Waterpath project.
+
 Input data for the QMRA model are the concentrations from GloWPa, the intake by a person during an exposure event, such as drinking or swimming or other activities, and dose-response information. To further simulate the number of cases or the disease burden, more information is required on the number of people that encounter exposure events. 
-</div>
 
 ## References
 
