@@ -1,0 +1,112 @@
+[
+  {
+    "name": "Human emissions",
+    "machine_name": "human_emissions",
+    "icon": "human_emissions.svg",
+    "description": "Data describing the human sources of pathogen emissions and the factors that determine how human excreta reaches soil and surface water.",
+    "subcategories": [
+      {
+        "name": "Population",
+        "machine_name": "population",
+        "icon": "human_population.svg",
+        "description": "Population, urbanization, age distribution, and Human Development Index data that determine the scale and spatial distribution of human emissions.",
+        "classification": [
+          "driver"
+        ]
+      },
+      {
+        "name": "Sanitation",
+        "machine_name": "sanitation",
+        "icon": "sanitation.svg",
+        "description": "Data describing toilet facilities and service levels that determine how much human excreta is contained, treated, or released to soil and water.",
+        "classification": [
+          "driver",
+          "response"
+        ]
+      },
+      {
+        "name": "Wastewater treatment",
+        "machine_name": "wastewater_treatment",
+        "icon": "wastewater_treatment.svg",
+        "description": "Data describing treated sewage and fecal sludge fractions, treatment plant capacities, and treatment levels that determine pathogen removal before discharge.",
+        "classification": [
+          "driver",
+          "response"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Livestock emissions",
+    "machine_name": "livestock_emissions",
+    "icon": "livestock_emissions.svg",
+    "description": "Data describing livestock sources of pathogen emissions and the factors that determine how contaminated manure reaches land and surface water.",
+    "subcategories": [
+      {
+        "name": "Livestock population",
+        "machine_name": "livestock_population",
+        "icon": "livestock_population.svg",
+        "description": "Animal numbers by species and area, together with biological parameters that determine manure-generated pathogen loads.",
+        "classification": [
+          "driver"
+        ]
+      },
+      {
+        "name": "Manure management",
+        "machine_name": "manure_management",
+        "icon": "manure_management.svg",
+        "description": "Data describing manure storage, spreading, grazing, digestion, burning, and other systems that affect pathogen survival and transport pathways.",
+        "classification": [
+          "driver",
+          "response"
+        ]
+      },
+      {
+        "name": "Production systems",
+        "machine_name": "production_systems",
+        "icon": "livestock_emissions.svg",
+        "description": "Data describing the share of each animal group raised in intensive and extensive systems, which affects where manure is concentrated and enters the environment.",
+        "classification": [
+          "driver",
+          "response"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Concentrations",
+    "machine_name": "concentrations",
+    "icon": "concentrations.svg",
+    "description": "Data used to model the transport, survival, and resulting concentrations of pathogens in surface water.",
+    "subcategories": [
+      {
+        "name": "Hydrology",
+        "machine_name": "hydrology",
+        "icon": "concentrations.svg",
+        "description": "River discharge, surface runoff, river temperature, and solar radiation data that control pathogen dilution, transport, and die-off in surface water.",
+        "classification": [
+          "pressure",
+          "state"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Risk",
+    "machine_name": "risk",
+    "icon": "risk.svg",
+    "description": "Data used to translate pathogen concentrations and human exposure into probabilities of infection.",
+    "subcategories": [
+      {
+        "name": "Exposure pathways",
+        "machine_name": "exposure_pathways",
+        "icon": "risk.svg",
+        "description": "Contact routes and assumptions about exposure frequency, ingested volume, drinking-water treatment, and boiling that drive quantitative microbial risk assessment.",
+        "classification": [
+          "driver",
+          "impact"
+        ]
+      }
+    ]
+  }
+]
