@@ -7,45 +7,45 @@ Scenario inputs are categorized as **Drivers**: the social, agricultural, and in
 The framework also measures **Impact** by translating pathogen concentrations into risk. By incorporating exposure pathways such as drinking water and recreational use, the Toolkit models human intake and calculates the resulting probability of infection.
 
 <div class="framework rounded-lg shadow-sm bg-white border hover:border-sand-100">
-<h3 class="flex items-center gap-3"><img src="./figures/human_emissions.svg" width="64" height="64" alt=""/>Human emissions</h2>
+<h3 class="flex items-center gap-3"><img src="./figures/human_emissions.svg" width="64" height="64" alt=""/>Human emissions</h3>
 
-<h4 class="flex items-center gap-3"><img src="./figures/human_population.svg" width="48" height="48" alt=""/>Population</h3>
+<h4 class="flex items-center gap-3"><img src="./figures/human_population.svg" width="48" height="48" alt=""/>Population</h4>
 
 Defines the population in each reporting area and the share living in urban settings. It includes the proportion of children under five and the Human Development Index. These values determine the scale and spatial distribution of human emissions.
 <hr/>
-<h4 class="flex items-center gap-3"><img src="./figures/sanitation.svg" width="48" height="48" alt=""/>Sanitation</h3>
+<h4 class="flex items-center gap-3"><img src="./figures/sanitation.svg" width="48" height="48" alt=""/>Sanitation</h4>
 
 Defines the mix of toilet facilities used by urban and rural populations. Services are summarized as safely managed, basic, unimproved, and open defecation. The facility mix controls how much human excreta is contained, treated, or released to soil and water.
 <hr/>
-<h4 class="flex items-center gap-3"><img src="./figures/wastewater_treatment.svg" width="48" height="48" alt=""/>Wastewater treatment</h3>
+<h4 class="flex items-center gap-3"><img src="./figures/wastewater_treatment.svg" width="48" height="48" alt=""/>Wastewater treatment</h4>
 
 Defines treated sewage and fecal sludge fractions by area, or individual treatment plant locations and capacities. It supports primary, secondary, tertiary, and quaternary treatment levels. Treatment choices determine the fraction of pathogens remaining in effluent before discharge.
 </div>
 
 <div class="framework rounded-lg shadow-sm bg-white border hover:border-sand-100">
-<h3 class="flex items-center gap-3"><img src="./figures/livestock_emissions.svg" width="64" height="64" alt=""/>Livestock emissions</h2>
+<h3 class="flex items-center gap-3"><img src="./figures/livestock_emissions.svg" width="64" height="64" alt=""/>Livestock emissions</h3>
 
-<h4 class="flex items-center gap-3"><img src="./figures/livestock_population.svg" width="48" height="48" alt=""/>Livestock population</h3>
+<h4 class="flex items-center gap-3"><img src="./figures/livestock_population.svg" width="48" height="48" alt=""/>Livestock population</h4>
 Defines animal numbers by species and geographic area. It includes biological parameters such as prevalence, excretion, body mass, and manure production. Together, these inputs determine the amount of manure-generated pathogen load from livestock.
 <hr/>
-<h4 class="flex items-center gap-3"><img src="./figures/manure_management.svg" width="48" height="48" alt=""/>Manure management</h3>
+<h4 class="flex items-center gap-3"><img src="./figures/manure_management.svg" width="48" height="48" alt=""/>Manure management</h4>
 Defines the share of each animal group's manure assigned to storage, spreading, grazing, digestion, burning, and other systems. It also divides manure between grazing and other land pathways for intensive and extensive production. These management choices affect pathogen survival and the route by which manure reaches land and surface water.
 <hr/>
 
-<h4 class="flex items-center gap-3"><img src="./figures/production_systems.svg" width="48" height="48" alt=""/>Production systems</h3>
+<h4 class="flex items-center gap-3"><img src="./figures/production_systems.svg" width="48" height="48" alt=""/>Production systems</h4>
 
 Defines the share of each animal group raised in intensive and extensive systems. The production split changes where manure is concentrated and how livestock emissions enter the environment.
 </div>
 
 <div class="framework rounded-lg shadow-sm bg-white border hover:border-sand-100">
-<h3 class="flex items-center gap-3"><img src="./figures/concentrations.svg" width="64" height="64" alt=""/>Concentrations</h2>
-<h4 class="flex items-center gap-3">Hydrology</h3>
+<h3 class="flex items-center gap-3"><img src="./figures/concentrations.svg" width="64" height="64" alt=""/>Concentrations</h3>
+<h4 class="flex items-center gap-3">Hydrology</h4>
 Describes river discharge, surface runoff, river temperature, and solar radiation across the scenario. Discharge and runoff control dilution, downstream transport, and the movement of pathogens from land into rivers. Water temperature and solar radiation influence pathogen die-off and therefore the concentrations that remain in surface water.
 </div>
 
 <div class="framework rounded-lg shadow-sm bg-white border hover:border-sand-100">
-<h3 class="flex items-center gap-3"><img src="./figures/risk.svg" width="64" height="64" alt=""/>Risk</h2>
-<h4 class="flex items-center gap-3">Exposure pathways</h3>
+<h3 class="flex items-center gap-3"><img src="./figures/risk.svg" width="64" height="64" alt=""/>Risk</h3>
+<h4 class="flex items-center gap-3">Exposure pathways</h4>
 Defines exposure pathways including drinking water, swimming, flooding, open drains, children's play, and clothes washing. It controls exposure frequency, ingested volume, drinking-water treatment, and boiling assumptions. These settings drive the quantitative microbial risk assessment calculation that converts pathogen concentrations into infection risk.
 </div>
 
